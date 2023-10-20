@@ -1,0 +1,47 @@
+/* un selector por ID sirve para dar un atribut a un etiqueta o muchas */
+#container {
+    width: 90%; /* establecer el anchura de container */
+    margin: auto;
+
+}
+
+/*1. color general de la lletra negra*/
+/* Aqui usamos un selector por etiqueta sirve para assignar valor para toda las etiqueta que ponemos, 
+por ejemplo aqui usamos el p y eso aplica a todas las etiqueta p que tenemos.*/
+p{
+    color:#000000;
+}
+/*2. titol nivell 1 fons blanc lletra gris*/
+/*Aqui usamos el selector por etiqueta para H1*/
+h1{
+    background-color: white;
+    color: gray;
+}
+
+/*3. tots els strong en color verd i subratllats*/
+/* Aqui usamos el selector por etiqueta mas un clase que se llama .paragraf2 y dentro de paragraf2 donde haya strong o un child selector*/
+strong, .paragraf2 strong {
+    color: green;
+    text-decoration: underline;
+}
+
+/*4. enllaços del paràgraf2 en italica*/
+/* usamos el selector de hijo de un nivel y usamos >*/
+.paragraf2 > a {
+    font-style: italic;
+}
+
+/*5. footer general del web centrat i lletra de 10px*/
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+/*6. Canvia l'ordre de càrrega dels fitxers i mira què passa. Sabries modificar el teu codi per a que se seguís veient igual que abans de canviar l'ordre?*/
+ /*Cuando cambiamos el orden de los ficheros primero se aplica el fichero que esta antes y despues el otro.*/
+ /* Las cosas que han cambiado son: el color de H1 quedan gris pero el background cambia a gris tambien
+ Los palabras con la etiqueta <strong> han cambiado a color lila, el enlace siguen igual(cursiva),
+ Y los footer siguen centrado y en tamaño de 10px*/
+
+/*para que sean lo mismo que eran antes depues de que cambiamos orden lo que yo haria sera usar classes y ID.*/
+ 
